@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard | SecureAccess</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="auth-wrapper">
+      <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+            <div class="auth-card text-center">
+              <!-- Brand -->
+
+              <div class="brand">
+                <div class="brand-icon">🔐</div>
+
+                <h1>Welcome!</h1>
+
+                <p id="welcomeMessage">You are successfully logged in.</p>
+              </div>
+
+              <!-- User Information -->
+
+              <div class="user-info mb-4">
+                <p class="mb-2">
+                  <strong> Name: </strong>
+
+                  <span id="userName"></span>
+                </p>
+
+                <p class="mb-0">
+                  <strong> Email: </strong>
+
+                  <span id="userEmail"></span>
+                </p>
+              </div>
+
+              <!-- Logout -->
+
+              <button
+                type="button"
+                id="logoutButton"
+                class="btn btn-danger w-100 auth-btn"
+              >
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>

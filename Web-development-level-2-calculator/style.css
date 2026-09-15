@@ -1,0 +1,113 @@
+/* =========================
+   General
+========================= */
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef2f7, #dfe7f1);
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   Calculator Card
+========================= */
+
+.calculator-card {
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   Title
+========================= */
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   Display
+========================= */
+
+#display {
+    height: 75px;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 14px;
+    background-color: #f8f9fa;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.btn {
+    height: 58px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 14px;
+
+    transition: transform 0.15s ease;
+}
+
+
+/* Button hover */
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Button click */
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+
+/* Operator buttons */
+
+.btn-warning {
+    color: white;
+}
+
+
+/* Equal button */
+
+.btn-primary {
+    font-size: 24px;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 576px) {
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .calculator-card {
+        border-radius: 20px;
+    }
+
+    #display {
+        height: 65px;
+        font-size: 24px;
+    }
+
+    .btn {
+        height: 52px;
+        font-size: 18px;
+    }
+
+}

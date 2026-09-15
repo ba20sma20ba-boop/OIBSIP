@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login | SecureAccess</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Authentication Wrapper -->
+
+    <main class="auth-wrapper">
+      <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+          <div class="col-12 col-sm-10 col-md-7 col-lg-5 col-xl-4">
+            <!-- Login Card -->
+
+            <div class="auth-card">
+              <!-- Brand -->
+
+              <div class="brand">
+                <div class="brand-icon">🔐</div>
+
+                <h1>SecureAccess</h1>
+
+                <p>Welcome back! Please login to your account.</p>
+              </div>
+
+              <!-- Login Form -->
+
+              <form id="loginForm">
+                <!-- Email -->
+
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label">
+                    Email Address
+                  </label>
+
+                  <input
+                    type="email"
+                    id="loginEmail"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                  />
+                </div>
+
+                <!-- Password -->
+
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">
+                    Password
+                  </label>
+
+                  <input
+                    type="password"
+                    id="loginPassword"
+                    class="form-control"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                  />
+                </div>
+
+                <!-- Remember Me -->
+
+                <div class="form-check mb-3">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="rememberMe"
+                  />
+
+                  <label class="form-check-label" for="rememberMe">
+                    Remember me
+                  </label>
+                </div>
+
+                <!-- Message -->
+
+                <div id="loginMessage" class="auth-message" role="alert"></div>
+
+                <!-- Login Button -->
+
+                <button type="submit" class="btn btn-primary w-100 auth-btn">
+                  Login
+                </button>
+              </form>
+
+              <!-- Register Link -->
+
+              <div class="auth-footer">
+                <span> Don't have an account? </span>
+
+                <a href="./register.html"> Create Account </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>

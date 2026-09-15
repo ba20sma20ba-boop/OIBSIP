@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculator</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+          <div class="card shadow calculator-card">
+            <div class="card-body">
+              <h1 class="text-center mb-4">Calculator</h1>
+
+              <!-- Display -->
+              <input
+                type="text"
+                id="display"
+                class="form-control form-control-lg text-end mb-3"
+                value="0"
+                readonly
+              />
+
+              <!-- Buttons -->
+              <div class="row g-2">
+                <!-- First Row -->
+                <div class="col-3">
+                  <button class="btn btn-danger w-100" id="clear">C</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" id="delete">⌫</button>
+                </div>
+
+                <div class="col-3">
+                  <button
+                    class="btn btn-secondary w-100 operator"
+                    data-operator="%"
+                  >
+                    %
+                  </button>
+                </div>
+
+                <div class="col-3">
+                  <button
+                    class="btn btn-warning w-100 operator"
+                    data-operator="/"
+                  >
+                    ÷
+                  </button>
+                </div>
+
+                <!-- Second Row -->
+                <div class="col-3">
+                  <button class="btn btn-light w-100 number">7</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn btn-light w-100 number">8</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn btn-light w-100 number">9</button>
+                </div>
+
+                <div class="col-3">
+                  <button
+                    class="btn btn-warning w-100 operator"
+                    data-operator="*"
+                  >
+                    ×
+                  </button>
+                </div>
+
+                <!-- Third Row -->
+                <div class="col-3">
+                  <button class="btn btn-light w-100 number">4</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn btn-light w-100 number">5</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn btn-light w-100 number">6</button>
+                </div>
+
+                <div class="col-3">
+                  <button
+                    class="btn btn-warning w-100 operator"
+                    data-operator="-"
+                  >
+                    −
+                  </button>
+                </div>
+
+                <!-- Fourth Row -->
+                <div class="col-3">
+                  <button class="btn btn-light w-100 number">1</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn btn-light w-100 number">2</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn btn-light w-100 number">3</button>
+                </div>
+
+                <div class="col-3">
+                  <button
+                    class="btn btn-warning w-100 operator"
+                    data-operator="+"
+                  >
+                    +
+                  </button>
+                </div>
+
+                <!-- Fifth Row -->
+                <div class="col-6">
+                  <button class="btn btn-light w-100 number">0</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn btn-light w-100" id="decimal">.</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn btn-primary w-100" id="equals">=</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>

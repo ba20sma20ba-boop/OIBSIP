@@ -1,0 +1,260 @@
+/* =========================
+   Global Styles
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   Authentication Wrapper
+========================= */
+
+.auth-wrapper {
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #dbeafe
+  );
+}
+
+
+/* =========================
+   Authentication Card
+========================= */
+
+.auth-card {
+  background-color: #ffffff;
+
+  border-radius: 24px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 20px 50px rgba(15, 23, 42, 0.12);
+}
+
+
+/* =========================
+   Brand
+========================= */
+
+.brand {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.brand-icon {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background-color: #eff6ff;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+}
+
+.brand h1 {
+  margin-bottom: 8px;
+
+  color: #1e293b;
+
+  font-size: 30px;
+
+  font-weight: 700;
+}
+
+.brand p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   Form Labels
+========================= */
+
+.form-label {
+  color: #334155;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   Form Inputs
+========================= */
+
+.form-control {
+  height: 50px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 12px;
+
+  padding: 10px 14px;
+
+  font-size: 14px;
+}
+
+.form-control:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   Remember Me
+========================= */
+
+.form-check-label {
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #2563eb;
+
+  border-color: #2563eb;
+}
+
+
+/* =========================
+   Authentication Button
+========================= */
+
+.auth-btn {
+  height: 50px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================
+   Messages
+========================= */
+
+.auth-message {
+  min-height: 22px;
+
+  margin-bottom: 10px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   Authentication Footer
+========================= */
+
+.auth-footer {
+  margin-top: 25px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #e2e8f0;
+
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   User Information
+========================= */
+
+.user-info {
+  padding: 18px;
+
+  background-color: #f8fafc;
+
+  border-radius: 14px;
+
+  color: #334155;
+}
+
+.user-info strong {
+  color: #1e293b;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 576px) {
+
+  .auth-card {
+    padding: 25px 20px;
+
+    border-radius: 18px;
+  }
+
+  .brand h1 {
+    font-size: 26px;
+  }
+
+  .brand p {
+    font-size: 13px;
+  }
+
+}

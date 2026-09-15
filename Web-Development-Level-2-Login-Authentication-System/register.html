@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Create Account | SecureAccess</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Authentication Wrapper -->
+
+    <main class="auth-wrapper">
+      <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+          <div class="col-12 col-sm-10 col-md-7 col-lg-5 col-xl-4">
+            <!-- Register Card -->
+
+            <div class="auth-card">
+              <!-- Brand -->
+
+              <div class="brand">
+                <div class="brand-icon">🔐</div>
+
+                <h1>Create Account</h1>
+
+                <p>Create your account to get started.</p>
+              </div>
+
+              <!-- Register Form -->
+
+              <form id="registerForm">
+                <!-- Full Name -->
+
+                <div class="mb-3">
+                  <label for="registerName" class="form-label">
+                    Full Name
+                  </label>
+
+                  <input
+                    type="text"
+                    id="registerName"
+                    class="form-control"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                  />
+                </div>
+
+                <!-- Email -->
+
+                <div class="mb-3">
+                  <label for="registerEmail" class="form-label">
+                    Email Address
+                  </label>
+
+                  <input
+                    type="email"
+                    id="registerEmail"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                  />
+                </div>
+
+                <!-- Password -->
+
+                <div class="mb-3">
+                  <label for="registerPassword" class="form-label">
+                    Password
+                  </label>
+
+                  <input
+                    type="password"
+                    id="registerPassword"
+                    class="form-control"
+                    placeholder="Create a password"
+                    autocomplete="new-password"
+                  />
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">
+                    Confirm Password
+                  </label>
+
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    class="form-control"
+                    placeholder="Confirm your password"
+                    autocomplete="new-password"
+                  />
+                </div>
+
+                <!-- Message -->
+
+                <div
+                  id="registerMessage"
+                  class="auth-message"
+                  role="alert"
+                ></div>
+
+                <!-- Register Button -->
+
+                <button type="submit" class="btn btn-primary w-100 auth-btn">
+                  Create Account
+                </button>
+              </form>
+
+              <!-- Login Link -->
+
+              <div class="auth-footer">
+                <span> Already have an account? </span>
+
+                <a href="./index.html"> Login </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
